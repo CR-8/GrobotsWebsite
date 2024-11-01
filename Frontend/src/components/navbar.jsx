@@ -10,8 +10,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="py-6 shadow-lg fixed top-0 w-full z-50 transition duration-300 ease-in-out">
-      <div className="container mx-auto flex justify-between items-center px-6"> {/* Added px-6 for horizontal padding */}
+    <nav className="py-6 shadow-lg fixed top-0 w-full z-50 bg-transparent transition duration-300 ease-in-out">
+      <div className="container mx-auto flex justify-between items-center px-6">
         {/* Brand */}
         <div className="text-white font-bold text-2xl transition-transform duration-300 hover:scale-105">
           <Link to="/">Grobots</Link>
@@ -22,7 +22,7 @@ function Navbar() {
           {["Home", "About", "Profile", "Gallery", "Signin", "Competition"].map((item) => (
             <Link
               key={item}
-              to={`/${item.toLowerCase()}`}
+              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
               className="text-gray-200 hover:text-white transition-colors duration-200 ease-in-out"
             >
               {item}
@@ -56,12 +56,12 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden text-white mt-2 py-2 animate-slideDown">
+        <div className="md:hidden text-white mt-2 py-2">
           <ul className="flex flex-col space-y-2">
             {["Home", "About", "Profile", "Gallery", "Signin", "Competition"].map((item) => (
               <li key={item}>
                 <Link
-                  to={`/${item.toLowerCase()}`}
+                  to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                   className="block text-gray-300 hover:text-white transition-colors duration-200 ease-in-out"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
