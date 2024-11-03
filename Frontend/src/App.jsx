@@ -1,13 +1,7 @@
 // App.jsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Profile from "./pages/profile";
-import Gallery from "./pages/gallery";
-import Signin from "./pages/signin";
-import Competition from "./pages/competition";
-import Navbar from "./components/navbar";
-import Animation from "./components/animation"
+import {Navbar,Animation, Footer} from "./components/components.js"
+import {Home, Gallery, About, Profile, Competition, Sigin} from "./pages/pages.js"
 
 const router = createBrowserRouter([
   {
@@ -17,6 +11,7 @@ const router = createBrowserRouter([
       <Animation/>
         <Navbar />
         <Home />
+        <Footer/>
       </>
     ),
   },
@@ -52,7 +47,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <Signin />
+        <Sigin />
       </>
     ),
   },

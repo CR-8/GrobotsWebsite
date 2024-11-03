@@ -1,0 +1,6 @@
+export {default as About} from "./about"
+export {default as Home} from "./home"
+export {default as Gallery} from "./gallery"
+export {default as Competition} from "./competition"
+export {default as Profile} from "./profile"
+export {default as Sigin} from "./signin"

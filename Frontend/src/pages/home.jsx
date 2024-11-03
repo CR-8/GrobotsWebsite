@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="flex flex-wrap justify-center gap-8 mb-6">
                     <div className="w-full max-w-md">
                         <iframe 
-                            src="https://www.google.com/maps/embed?..." 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.3710768661012!2d81.07335702761064!3d26.89171597386298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399958aa9da50cb7%3A0x8f5a1f4d75d0d691!2sShri%20Ramswaroop%20College%20Of%20Engineering%20and%20Management!5e0!3m2!1sen!2sus!4v1730569503504!5m2!1sen!2sus" 
                             className="w-full h-72 rounded-lg" 
                             allowFullScreen 
                             loading="lazy"
